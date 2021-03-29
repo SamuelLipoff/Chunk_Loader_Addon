@@ -1,0 +1,37 @@
+{
+    "format_versiom": "1.16.210",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "cl:chunk_loader_entity",
+            "is_spawnable": false,
+            "is_summonable": false,
+            "is_experimental": false
+        },
+        "component_groups": {
+            
+        },
+        "components": {
+            "minecraft:tick_world": {
+                "value": 2
+            },
+            "minecraft:collision_box": {
+                "width": 0.01,
+                "height": 0.01
+            },
+            "minecraft:scale": 1,
+            "minecraft:physics": {
+                "has_collision": false,
+                "has_gravity": false
+            },
+            "minecraft:type_family": {
+                "family": ["chunk_loader"]
+            },
+            "minecraft:fire_immune": {
+                
+            }
+        },
+        "events": {
+            
+        }
+    }
+}

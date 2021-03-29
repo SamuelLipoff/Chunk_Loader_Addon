@@ -1,0 +1,19 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "",
+        "name": "Chunk Loader",
+        "uuid": "6c740f4b-1afb-4c2d-9e3f-3876f4e582ae",
+        "min_engine_version": [1,16,210],
+        "version": [1,0,0]
+    },
+    "modules": [{
+        "type": "data",
+        "uuid": "a991abdc-8b85-4c63-976a-b4a4bfa09967",
+        "version": [1,0,0]
+    }],
+    "dependencies": [{
+        "uuid": "d4caec7e-46a6-47ef-932c-5fe637699c49",
+        "version": [1,0,0]
+    }]
+}

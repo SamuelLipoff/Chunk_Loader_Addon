@@ -1,0 +1,16 @@
+{
+    "format_version": "1.16.210",
+    "minecraft:block": {
+        "description": {
+            "identifier": "cl:chunk_loader_block",
+            "is_experimental": true,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/blocks/chunkloader.json",
+            "minecraft:destroy_time": 5,
+            "minecraft:explosion_resistance": 10,
+            "minecraft:map_color": "#ff5b5b"
+        }
+    }
+}

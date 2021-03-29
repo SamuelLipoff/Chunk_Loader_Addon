@@ -1,0 +1,196 @@
+{
+    "format_version": "1.16.0",
+    "mimecraft:block": {
+        "description": {
+            "identifier": "chunk:loader",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        // "component_groups": {
+        //     "destroy_time:hand": {
+        //         "minecraft:destroy_time": {
+        //             "value": 5.5
+        //         }
+        //     },
+        //     "destroy_time:stone_pickaxe": {
+        //         "minecraft:destroy_time": {
+        //             "value": 5
+        //         }
+        //     },
+        //     "destroy_time:iron_pickaxe": {
+        //         "minecraft:destroy_time": {
+        //             "value": 4.5
+        //         }
+        //     },
+        //     "destroy_time:diamond_pickaxe": {
+        //         "minecraft:destroy_time": {
+        //             "value": 4
+        //         }
+        //     },
+        //     "destroy_time:golden_pickaxe": {
+        //         "minecraft:destroy_time": {
+        //             "value": 3
+        //         }
+        //     },
+        //     "destroy_time:netherite_pickaxe": {
+        //         "minecraft:destroy_time": {
+        //             "value": 2
+        //         }
+        //     }
+        // },
+        "components": {
+            "minecraft:destroy_time": {
+                "value": 0.5
+            },
+            "minecraft:explosion_resistance": {
+                "value": -1.0
+            },
+            "minecraft:map_color": {
+                "color": "#ff5b5b"
+            }
+        //     "minecraft:environment_sensor": {
+        //         "triggers": [{
+        //             "filters": {
+        //                 "all_of": [{
+        //                     "test": "has_equipment",
+        //                     "subject": "player",
+        //                     "domain": "hand",
+        //                     "value": "minecraft:stone_pickaxe",
+        //                     "operator": "=="
+        //                 }]
+        //             },
+        //             "event": "block:stone"
+        //         }, {
+        //             "filters": {
+        //                 "all_of": [{
+        //                     "test": "has_equipment",
+        //                     "subject": "player",
+        //                     "domain": "hand",
+        //                     "value": "minecraft:iron_pickaxe",
+        //                     "operator": "=="
+        //                 }]
+        //             },
+        //             "event": "block:iron"
+        //         }, {
+        //             "filters": {
+        //                 "all_of": [{
+        //                     "test": "has_equipment",
+        //                     "subject": "player",
+        //                     "domain": "hand",
+        //                     "value": "minecraft:diamond_pickaxe",
+        //                     "operator": "=="
+        //                 }]
+        //             },
+        //             "event": "block:diamond"
+        //         }, {
+        //             "filters": {
+        //                 "all_of": [{
+        //                     "test": "has_equipment",
+        //                     "subject": "player",
+        //                     "domain": "hand",
+        //                     "value": "minecraft:golden_pickaxe",
+        //                     "operator": "=="
+        //                 }]
+        //             },
+        //             "event": "block:gold"
+        //         }, {
+        //             "filters": {
+        //                 "all_of": [{
+        //                     "test": "has_equipment",
+        //                     "subject": "player",
+        //                     "domain": "hand",
+        //                     "value": "minecraft:netherite_pickaxe",
+        //                     "operator": "=="
+        //                 }]
+        //             },
+        //             "event": "block:netherite"
+        //         }]
+        //     }
+        // },
+        // "events": {
+        //     "block:hand": {
+        //         "add": {
+        //             "component_groups": ["destroy_time:hand"]
+        //         },
+        //         "remove": {
+        //             "component_groups": [
+        //                 "destroy_time:stone_pickaxe",
+        //                 "destroy_time:iron_pickaxe",
+        //                 "destroy_time:diamond_pickaxe",
+        //                 "destroy_time:golden_pickaxe",
+        //                 "destroy_time:netherite_pickaxe"
+        //             ]
+        //         }
+        //     },
+        //     "block:stone": {
+        //         "add": {
+        //             "component_groups": ["destroy_time:stone_pickaxe"]
+        //         },
+        //         "remove": {
+        //             "component_groups": [
+        //                 "destroy_time:hand",
+        //                 "destroy_time:iron_pickaxe",
+        //                 "destroy_time:diamond_pickaxe",
+        //                 "destroy_time:golden_pickaxe",
+        //                 "destroy_time:netherite_pickaxe"]
+        //         }
+        //     },
+        //     "block:iron": {
+        //         "add": {
+        //             "component_groups": ["destroy_time:iron_pickaxe"]
+        //         },
+        //         "remove": {
+        //             "component_groups": [
+        //                 "destroy_time:hand",
+        //                 "destroy_time:stone_pickaxe",
+        //                 "destroy_time:diamond_pickaxe",
+        //                 "destroy_time:golden_pickaxe",
+        //                 "destroy_time:netherite_pickaxe"
+        //             ]
+        //         }
+        //     },
+        //     "block:diamond": {
+        //         "add": {
+        //             "component_groups": ["destroy_time:diamond_pickaxe"]
+        //         },
+        //         "remove": {
+        //             "component_groups": [
+        //                 "destroy_time:hand",
+        //                 "destroy_time:stone_pickaxe",
+        //                 "destroy_time:iron_pickaxe",
+        //                 "destroy_time:golden_pickaxe",
+        //                 "destroy_time:netherite_pickaxe"
+        //             ]
+        //         }
+        //     },
+        //     "block:gold": {
+        //         "add": {
+        //             "component_groups": ["destroy_time:golden_pickaxe"]
+        //         },
+        //         "remove": {
+        //             "component_groups": [
+        //                 "destroy_time:hand",
+        //                 "destroy_time:stone_pickaxe",
+        //                 "destroy_time:iron_pickaxe",
+        //                 "destroy_time:diamond_pickaxe",
+        //                 "destroy_time:netherite_pickaxe"
+        //             ]
+        //         }
+        //     },
+        //     "block:netherite": {
+        //         "add": {
+        //             "component_groups": ["destroy_time:netherite_pickaxe"]
+        //         },
+        //         "remove": {
+        //             "component_groups": [
+        //                 "destroy_time:hand",
+        //                 "destroy_time:stone_pickaxe",
+        //                 "destroy_time:iron_pickaxe",
+        //                 "destroy_time:diamond_pickaxe",
+        //                 "destroy_time:golden_pickaxe"
+        //             ]
+        //         }
+            }
+        }
+    }
+}
